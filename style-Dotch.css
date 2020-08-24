@@ -5,6 +5,11 @@ body {
 header {
     background-color: #FFD7BE;
 }
+
+.img-container {
+    margin-left: 1rem;
+}
+
 .sidebar {
     color: red;
 }
