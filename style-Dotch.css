@@ -34,7 +34,7 @@ ul {
     margin-top: 5rem;
     padding: 2rem;
     list-style: none;
-    right: -50px;
+    right: -300px;
     background: rgba(71, 70, 79, 0.452);
     transition: all .5s ease;
 }
