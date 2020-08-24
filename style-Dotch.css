@@ -1,0 +1,29 @@
+body {
+    margin: 0rem;
+}
+
+header {
+    background-color: #FFD7BE;
+}
+.sidebar {
+    color: red;
+}
+
+input {
+    display: none;
+}
+
+label {
+    position: absolute;
+    right: 1px;
+}
+
+ul {
+    position: absolute;
+    right: 0px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ ul {
+    right: 10px;
+}
