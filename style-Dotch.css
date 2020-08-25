@@ -35,12 +35,12 @@ ul {
     position: absolute;
     height: 70%;
     margin-top: 5rem;
-    padding: 2rem;
+    padding: 2rem 0rem;
     padding-left: 3rem;
     list-style: none;
     right: -300px;
-    background: rgba(71, 70, 79, 0.904);
-    color: #F2EEE3;
+    background: rgb(71, 70, 79);
+    color: #ffffff;
     z-index: 1;
     transition: all .5s ease;
 }
@@ -48,7 +48,7 @@ ul {
 ul::before{
     position: absolute;
     content: '';
-    background: rgba(71, 70, 79, 0.678);
+    background: rgba(71, 70, 79, 0.904);
 	width: 30px;
 	height: 30px;
 	right: 23px;
@@ -59,7 +59,7 @@ ul::before{
 }
 
 li {
-    margin-right: rem;
+    margin-right: 1rem;
 }
 
 a{
@@ -87,7 +87,6 @@ ul .profile {
 .user-name {
     font-size: 10pt;
     margin-bottom: 2rem;
-    padding-left: .rem;
 }
 
 .fa-user {
