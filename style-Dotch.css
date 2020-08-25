@@ -38,6 +38,7 @@ ul {
     padding: 2rem 0rem;
     padding-left: 3rem;
     list-style: none;
+    direction: rtl;
     right: -300px;
     background: rgb(71, 70, 79);
     color: #ffffff;
@@ -63,14 +64,14 @@ li {
 }
 
 a{
-    color: #F2EEE3;
+    color: #faf9f9;
     text-decoration: none;
 }
 
 ul .fa {
     position: relative;
     font-size: 1.3rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     color: #C4C4C4;
     margin-bottom: 1.5rem;
 }
@@ -81,35 +82,18 @@ ul .profile {
 }
 
 [alt='user'] {
-    padding-left: 4rem;
 }
 
 .user-name {
+    margin-right: .2rem;
     font-size: 10pt;
     margin-bottom: 2rem;
 }
 
 .fa-user {
     padding-top: 2rem;
-    left: 50.6px;
-}
-
-.fa-envelope {
-    left: 13.5px;
-}
-
-.fa-bookmark {
-    left: 2px;
-}
-
-.fa-gear {
-    left: 32px;
-}
-
-.fa-question-circle {
-    left: 70px;
 }
 
 #check:checked ~ ul {
-    right: 1px;
+    right: 2px;
 }
