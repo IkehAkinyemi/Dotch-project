@@ -1,5 +1,7 @@
 body {
     margin: 0rem;
+    font-size: 16pt;
+    text-decoration: none;
 }
 
 header {
@@ -31,48 +33,82 @@ input {
 
 ul {
     position: absolute;
+    height: 70%;
     margin-top: 5rem;
     padding: 2rem;
+    padding-left: 3rem;
     list-style: none;
     right: -300px;
-    background: rgba(71, 70, 79, 0.452);
+    background: rgba(71, 70, 79, 0.904);
+    color: #F2EEE3;
+    z-index: 1;
     transition: all .5s ease;
 }
 
 ul::before{
-	content: '';
+    position: absolute;
+    content: '';
+    background: rgba(71, 70, 79, 0.678);
 	width: 30px;
 	height: 30px;
-	position: relative;
-	right: 0;
-	top: -10px;
+	right: 23px;
+    top: -10px;
+    box-sizing: border-box;
+    z-index: -1;
+    transform: rotate(45deg);
 }
 
 li {
-    margin-right: 1rem;
+    margin-right: rem;
+}
+
+a{
+    color: #F2EEE3;
+    text-decoration: none;
 }
 
 ul .fa {
     position: relative;
     font-size: 1.3rem;
     margin-left: 1rem;
-    margin-bottom: 1.1rem;
+    color: #C4C4C4;
+    margin-bottom: 1.5rem;
+}
+
+ul .profile {
+    margin-left: 2.8rem;
+    
+}
+
+[alt='user'] {
+    padding-left: 4rem;
+}
+
+.user-name {
+    font-size: 10pt;
+    margin-bottom: 2rem;
+    padding-left: .rem;
 }
 
 .fa-user {
-    left: 36.6px;
+    padding-top: 2rem;
+    left: 50.6px;
 }
 
 .fa-envelope {
-    left: 7.5px;
+    left: 13.5px;
+}
+
+.fa-bookmark {
+    left: 2px;
 }
 
 .fa-gear {
-    left: 22px;
+    left: 32px;
 }
 
 .fa-question-circle {
-    left: 50px;
+    left: 70px;
 }
 
 #check:checked ~ ul {
