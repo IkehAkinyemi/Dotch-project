@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+html {
+    overflow-x: hidden;
+}
 
 body {
     margin: 0rem;
@@ -36,6 +39,7 @@ input {
 }
 
 .menu {
+    display: none;
     position: absolute;
     height: 70%;
     margin-top: 3.9rem;
@@ -116,4 +120,16 @@ ul .fa {
 
 .nav-collection span {
     margin-right: 1rem;
+}
+
+.nav-collection label {
+    margin-bottom: ;
+}
+
+.fa-search {
+   
+}
+
+#input {
+    /* display: inline; */
 }
