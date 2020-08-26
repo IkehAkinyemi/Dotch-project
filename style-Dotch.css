@@ -47,7 +47,6 @@ input {
     background: rgb(71, 70, 79);
     color: #ffffff;
     z-index: 1;
-    transition: all .5s ease;
 }
 
 ul::before{
@@ -80,11 +79,6 @@ ul .fa {
     margin-bottom: 1.5rem;
 }
 
-.profile {
-    margin-left: 2.8rem;
-    
-}
-
 .user-name {
     margin-right: .2rem;
     font-size: 10pt;
@@ -96,13 +90,14 @@ ul .fa {
 }
 
 #check:checked ~ ul {
+    display: block;
+    transition: all .5s ease;
     right: 0px;
 }
 
 .nav-collection {
     margin-top: 3.3rem;
     color: white;
-    max-height: 100;
     padding: 1rem;
     background: #373640;
     list-style: none;
@@ -110,11 +105,13 @@ ul .fa {
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
-    transition: all .2 ease;
 }
 
 .nav-collection::-webkit-scrollbar {
-    width: 0px;
+    width: 10px;  /* Remove scrollbar space */
+    height: 0px;
+    display: none;
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 .nav-collection span {
