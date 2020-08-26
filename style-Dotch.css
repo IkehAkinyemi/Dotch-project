@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
 body {
     margin: 0rem;
     font-size: 16pt;
     text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -31,10 +35,10 @@ input {
     display: none;
 }
 
-ul {
+.menu {
     position: absolute;
     height: 70%;
-    margin-top: 5rem;
+    margin-top: 3.9rem;
     padding: 2rem 0rem;
     padding-left: 3rem;
     list-style: none;
@@ -71,17 +75,14 @@ a{
 ul .fa {
     position: relative;
     font-size: 1.3rem;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
     color: #C4C4C4;
     margin-bottom: 1.5rem;
 }
 
-ul .profile {
+.profile {
     margin-left: 2.8rem;
     
-}
-
-[alt='user'] {
 }
 
 .user-name {
@@ -95,5 +96,27 @@ ul .profile {
 }
 
 #check:checked ~ ul {
-    right: 2px;
+    right: 0px;
+}
+
+.nav-collection {
+    margin-top: 3.3rem;
+    color: white;
+    max-height: 100;
+    padding: 1rem;
+    background: #373640;
+    list-style: none;
+    font-size: 11pt;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    transition: all .2 ease;
+}
+
+.nav-collection::-webkit-scrollbar {
+    width: 0px;
+}
+
+.nav-collection span {
+    margin-right: 1rem;
 }
