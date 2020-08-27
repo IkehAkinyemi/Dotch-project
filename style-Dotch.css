@@ -139,6 +139,10 @@ ul .fa {
     height: 0px;
 }
 
+.fa-search {
+    margin-right: 1rem !important;
+}
+
 [for='input'] {
     margin-left: -1rem;
 }
