@@ -11,7 +11,10 @@ let searchCount = 0, // using the searchCount varaible to keep track of when to 
 //Event listener attached unto the body of the document.
 bodyUi.addEventListener('click', openOrCloseSearch);
 bodyUi.addEventListener('click', closeMenu);
-
+searchInput.addEventListener('focus', () => {
+    console.log('Hey');
+    searchInput.style.border = 'none';
+})
 //Function to open and close the search input at the top of document.
 function openOrCloseSearch(e) {
     if (e.target.classList.contains('fa-search') && searchCount % 2 == 0) {
