@@ -148,10 +148,11 @@ ul .fa {
 
 #search-input {
     position: absolute;
-    outline-color: rgb(139, 190, 241);
+    outline-color: rgb(116, 183, 250);
+    border: 2px solid ;
     display: none;
     font-size: 10pt;
-    width: 100%;
+    width: 94.5%;
     margin-top: 3.4rem;
     margin-top: 3.4rem;
     padding: .6rem;
