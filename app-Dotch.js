@@ -21,13 +21,13 @@ function openOrCloseSearch(e) {
         searchCount++;
         navContainer.style.marginTop = '6rem';
         navContainer.style.transition = 'all .5s ease';
-        setTimeout(function() {
-            navContainer.style.transition = 'none';
-        }, 350)
+        // setTimeout(function() {
+        //     navContainer.style.transition = 'none';
+        // }, 350)
         searchInput.style.display = 'block';
     } else {
         if (e.target.classList.contains('fa-search') && searchCount % 2 != 0) {
-            navContainer.style.transition = 'all .5s ease';
+            // navContainer.style.transition = 'all .5s ease';
             searchInput.style.display = 'none';
             setTimeout(function() {
                 navContainer.style.transition = 'none';
