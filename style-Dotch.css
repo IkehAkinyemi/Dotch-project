@@ -111,6 +111,7 @@ ul .fa {
     list-style: none;
     font-size: 11pt;
     display: flex;
+    justify-content: space-between;
     overflow-x: scroll;
 }
 
@@ -152,7 +153,7 @@ ul .fa {
     border: 2px solid ;
     display: none;
     font-size: 10pt;
-    width: 94.5%;
+    width: 96.9%;
     margin-top: 3.4rem;
     margin-top: 3.4rem;
     padding: .6rem;
