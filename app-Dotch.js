@@ -20,11 +20,15 @@ function openOrCloseSearch(e) {
     if (e.target.classList.contains('fa-search') && searchCount % 2 == 0) {
         searchCount++;
         navContainer.style.marginTop = '6rem'
+        navContainer.style.transition = 'all .5s ease'
         searchInput.style.display = 'block';
     } else {
         if (e.target.classList.contains('fa-search') && searchCount % 2 != 0) {
             searchInput.style.display = 'none';
-            navContainer.style.marginTop = '0rem'
+            setTimeout(function() {
+                navContainer.style.transition = 'none';
+            }, 200)
+            navContainer.style.marginTop = '0rem';
             searchCount++;
         }
     }
