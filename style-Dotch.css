@@ -100,6 +100,7 @@ ul .fa {
 
 .nav-container {
     margin-top: 0rem;
+    transition: all .5s ease;
 }
 
 .nav-collection {
