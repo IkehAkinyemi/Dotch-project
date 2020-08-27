@@ -39,6 +39,7 @@ input {
 }
 
 .menu {
+    display: none;
     position: absolute;
     height: 70%;
     margin-top: 3.9rem;
@@ -99,6 +100,10 @@ ul .fa {
     right: 0px;
 }
 
+.nav-container {
+    margin-top: 0rem;
+}
+
 .nav-collection {
     margin-top: 3.3rem;
     color: white;
@@ -107,7 +112,6 @@ ul .fa {
     list-style: none;
     font-size: 11pt;
     display: flex;
-    justify-content: space-between;
     overflow-x: scroll;
 }
 
@@ -119,7 +123,15 @@ ul .fa {
 }
 
 .nav-collection span {
-    margin-right: 1rem;
+    margin-right: 2rem;
+}
+
+.nav-collection span a:active {
+    color: #FF8426;
+}
+
+.first {
+    margin-right: 3.5rem !important;
 }
 
 .nav-collection label {
@@ -127,10 +139,17 @@ ul .fa {
     height: 0px;
 }
 
-.fa-search {
-
+[for='input'] {
+    margin-left: -1rem;
 }
 
-#input {
-    /* display: inline; */
+#search-input {
+    position: absolute;
+    outline-color: rgb(139, 190, 241);
+    display: none;
+    font-size: 10pt;
+    width: 100%;
+    margin-top: 3.4rem;
+    margin-top: 3.4rem;
+    padding: .6rem;
 }
