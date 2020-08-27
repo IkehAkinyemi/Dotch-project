@@ -95,8 +95,6 @@ ul .fa {
 }
 
 #check:checked ~ ul {
-    display: block;
-    transition: all .5s ease;
     right: 0px;
 }
 

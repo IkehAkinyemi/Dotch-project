@@ -33,7 +33,9 @@ function closeMenu(e) {
         menuCount++;
     } else {
         if (e.target.classList.contains('fa-bars') && menuCount % 2 != 0) {
-            menu.style.display = 'none';
+            setTimeout(function() {
+                menu.style.display = 'none';
+            },250)
             menuCount++;
         }
     }
