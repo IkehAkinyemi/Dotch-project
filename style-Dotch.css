@@ -162,3 +162,12 @@ ul .fa {
     margin-top: 3.4rem;
     padding: 1rem;
 }
+
+.post-feed {
+    width: 100%;
+}
+
+.post-feed img {
+    width: 100%;
+    /* height: auto; */
+}
