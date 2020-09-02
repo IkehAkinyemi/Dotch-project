@@ -1,52 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
-html {
-    overflow-x: hidden;
+html, body {
     width: 100%;
     height: 100%;
 }
 
 body {
     margin: 0rem;
-    font-size: 16pt;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
     font-family: 'Raleway', sans-serif;
+    font-size: 16pt;
     overflow-x: hidden;
 }
 
-header {
-    background-color: #FFD7BE;
-}
 
-.img-container {
-    margin-left: 1rem;
+.sub-header {
+    display: flex;
+    background-color: #FFD7BE;
+    padding: 0rem 0.7rem;
 }
 
 .sidebar {
-    margin-top: -3.3rem;
+    margin-left: auto;
 }
 
-.sidebar label {
-    position: absolute;
-    right: 1px;
-    font-size: 2.7rem;
-    margin-right: 1rem;
+#check {
+    display: none;
+}
+
+#check:checked ~ ul {
+    right: 0px;
 }
 
 .fa-bars {
-    color: #373640;
+    font-size: 2.7rem;
+    line-height: 70px;
+    color: #373640 !important;
 }
 
-input {
-    display: none;
+a{
+    color: #f5f0f0;
+    text-decoration: none;
+}
+
+.fa {
+    color: #C4C4C4;
 }
 
 .menu {
-    display: none;
+    display: non;
     position: absolute;
-    height: 70%;
-    margin-top: 3.9rem;
+    height: 80%;
+    margin-top: 0.5rem;
     padding: 2rem 0rem;
     padding-left: 3rem;
     list-style: none;
@@ -64,51 +67,56 @@ ul::before{
     background: rgba(71, 70, 79, 0.904);
 	width: 30px;
 	height: 30px;
-	right: 23px;
+	right: 15px;
     top: -10px;
     box-sizing: border-box;
     z-index: -1;
     transform: rotate(45deg);
 }
 
-li {
-    margin-right: 1rem;
-}
-
-a{
-    color: #faf9f9;
-    text-decoration: none;
-}
-
-ul .fa {
-    position: relative;
-    font-size: 1.3rem;
-    margin-left: 2rem;
-    color: #C4C4C4;
-    margin-bottom: 1.5rem;
+.ul-items {
+    margin: 1.5rem;
 }
 
 .user-name {
     margin-right: .2rem;
     font-size: 10pt;
     margin-bottom: 2rem;
+    margin-top: .2rem;
 }
 
-.fa-user {
-    padding-top: 2rem;
+.profile {
+    margin-top: 2.5rem;
 }
 
-#check:checked ~ ul {
-    right: 0px;
+.ul-items .fa {
+    margin-left: 1rem;
 }
 
 .nav-container {
-    margin-top: 0rem;
-    transition: none;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 0rem;
+}
+
+#search-input {
+    outline-color: rgb(116, 183, 250);
+    border: 2px solid ;
+    display: none;
+    font-size: 10pt;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0rem;
 }
 
 .nav-collection {
-    margin-top: 3.3rem;
+    margin-top: 0rem;
     color: white;
     padding: 1rem;
     background: #373640;
@@ -126,48 +134,22 @@ ul .fa {
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
-.nav-collection span {
-    margin-right: 2rem;
-}
-
-.nav-collection span a:active {
-    color: #FF8426;
-}
-
-.first {
-    margin-right: 3.5rem !important;
-}
-
-.nav-collection label {
-    padding: 0;
-    height: 0px;
-}
-
 .fa-search {
-    margin-right: 1rem !important;
+    font-size: 16pt;
 }
 
-[for='input'] {
-    margin-left: -1rem;
-}
-
-#search-input {
-    position: absolute;
-    outline-color: rgb(116, 183, 250);
-    border: 2px solid ;
-    display: none;
-    font-size: 10pt;
-    width: 96.9%;
-    margin-top: 3.4rem;
-    margin-top: 3.4rem;
-    padding: 1rem;
+main {
+    display: grid;
+    grid-template-columns: ;
 }
 
 .post-feed {
     width: 100%;
+    margin: 0rem .8rem;
+    margin-bottom: 2rem;
 }
 
-.post-feed img {
+.post-feed .img-container img {
     width: 100%;
-    /* height: auto; */
+    height: 400px;
 }
