@@ -8,6 +8,7 @@ body {
     margin: 0rem;
     font-family: 'Raleway', sans-serif;
     font-size: 16pt;
+    background: #F2EEE3;
     overflow-x: hidden;
 }
 
@@ -153,4 +154,76 @@ main {
 .post-feed .img-container img {
     width: 100%;
     height: 400px;
+}
+
+.description {
+    background: #ffffff;
+    font-size: 14pt;
+    padding: .5rem .8rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+.studio-name {
+    font-weight: bolder;
+    margin-top: .5rem;
+}
+
+.location-date {
+    display: flex;
+    margin-top: .7rem;
+}
+
+.location {
+    font-size: 12pt;
+}
+
+.date {
+    margin-left: auto;
+    font-size: 12pt;
+}
+
+.post-footer {
+    display: flex;
+    margin-top: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+.avatar-name {
+    display: flex;
+}
+
+.name {
+    line-height: 50px;
+    margin-left: .5rem;
+    font-size: 13pt;
+}
+
+.photographer {
+    font-weight: 600;
+}
+
+.activities {
+    display: flex;
+    margin-left: auto;
+}
+
+.activities .fa-bookmark {
+    line-height: 51px;
+    color: rgb(121, 184, 247);
+}
+
+.fa-comment {
+    margin: 0rem 1.5rem;
+    line-height: 50px;
+    color: #5C848E;
+}
+
+.fa-heart {
+    line-height: 50px;
+    color: red;
+}
+
+.latter-post {
+    margin-top: -10rem;
 }
