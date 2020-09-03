@@ -77,6 +77,7 @@ ul::before{
 
 .ul-items {
     margin: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .user-name {
