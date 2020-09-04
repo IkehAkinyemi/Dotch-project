@@ -221,7 +221,7 @@ main {
 }
 
 .fa-comment {
-    margin: 0rem 1.9rem;
+    margin: 0rem 1.5rem;
     line-height: 50px;
     color: #5C848E;
 }
@@ -233,4 +233,65 @@ main {
 
 .fa-heart:active {
     color: rgba(248, 85, 85, 0.856);
+}
+
+/*UI styling for the loading effect at the bottom of the screen*/
+.loading {
+    display: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border-top: 2px solid #f09359;
+	margin-left: 50%;
+	position: relative;
+	animation: a1 2s linear infinite;
+}
+
+.loading::before, .loading::after {
+	content: '';
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+
+.loading::before {
+	border-top: 2px solid rgb(71, 70, 79);
+	transform: rotate(120deg);
+}
+
+.loading::after {
+	border-top: 2px solid #3498db;
+	transform: rotate(240deg);
+}
+
+@keyframes a1 {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.announcement {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        display: none;
+    }
+
+    main {
+        display: none;
+    }
+    .loading {
+        display: none;
+    }
+
+    .announcement {
+        margin: 50% 50%;
+        font-size: 20pt;
+    }
 }
