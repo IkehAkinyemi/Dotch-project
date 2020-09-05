@@ -57,7 +57,9 @@ function closeMenu(e) {
     };
 };
 
+//event listener
 window.addEventListener('scroll', dynamicPostUpdate);
+//Action called on the scroll event of the browser, that updates that the content with new posts
 function dynamicPostUpdate() {
     let contentHeight = mainContent.offsetHeight;
     let verticalOffset = window.pageYOffset;
@@ -74,7 +76,21 @@ function dynamicPostUpdate() {
 };
 
 //Data variables to be rendered on the screen
-let postImages = ['third-img.png', 'second-img.png', 'first-img.png'];
+let postImages = [
+    'tinified1.jpg',  'tinified2.jpg',  'tinified3.jpg',
+    'tinified4.jpg',  'tinified5.jpg',  'tinified6.jpg',
+    'tinified7.jpg',  'tinified8.jpg',  'tinified9.jpg',
+    'tinified10.jpg', 'tinified11.jpg', 'tinified12.jpg',
+    'tinified13.jpg', 'tinified14.jpg', 'tinified15.jpg',
+    'tinified16.jpg', 'tinified17.jpg', 'tinified18.jpg',
+    'tinified19.jpg', 'tinified20.jpg', 'tinified21.jpg',
+    'tinified22.jpg', 'tinified23.jpg', 'tinified24.jpg',
+    'tinified25.jpg', 'tinified26.jpg', 'tinified27.jpg',
+    'tinified28.jpg', 'tinified29.jpg', 'tinified30.jpg',
+    'tinified31.jpg', 'tinified32.jpg', 'tinified33.jpg',
+    'tinified34.jpg', 'tinified35.jpg', 'tinified36.jpg',
+    'tinified37.jpg'
+  ];
 let postAvatar = ['third-avatar.png', 'second-avatar.png', 'first-avatar.png'];
 let studios = ['WaterLoop', 'Brixton Camp', 'Craps Place'];
 let countries = ['Australia', 'Boston', 'Manchester'];
@@ -82,11 +98,21 @@ let date = ['December 27, 2020', 'July 18, 2018', 'April 29, 2019'];
 let name = ['IKEH AKINYEMI', 'PRISTON FLAPPS', 'BRAID THOMPSON'];
 let postLimit = 5;
 
+//Random decision making function
+function randomDecision(varaibleItem) {
+    return  Math.floor(Math.random() * (varaibleItem));
+}
 
 function createPostFeed() {
-    let postsPerSeconds = Math.floor(Math.random() * postLimit);
+    let postsPerSeconds = randomDecision(postLimit);
 	for(let x = 0; x < postsPerSeconds; x++) {
-        let randomPost = Math.floor(Math.random() * (postImages.length));
+        console.log(postsPerSeconds);
+        let randomPost = randomDecision(postImages.length),
+            randomAvatar = randomDecision(postAvatar.length),
+            randomStudio =  randomDecision(studios.length),
+            randomCountries =  randomDecision(countries.length),
+            randomDate = randomDecision(date.length),
+            randomName = randomDecision(name.length);
         //the post feed container and it's sub elements
 		const generatedPost = document.createElement('div');
         generatedPost.className = 'post-feed';
@@ -94,7 +120,7 @@ function createPostFeed() {
         //The image container
 		const imgContainer = document.createElement('div');
 		imgContainer.className = 'img-container';
-        imgContainer.innerHTML = `<img src="./assets/image/${postImages[randomPost]}">`;
+        imgContainer.innerHTML = `<img src="./assets/tinified/${postImages[randomPost]}">`;
         
         //The desrcription container
 		let descriptionContainer = document.createElement('div');
@@ -105,7 +131,7 @@ function createPostFeed() {
         studioName.className = 'studio-name';
         let studioSpan = document.createElement('span');
         let studioLink = document.createElement('a');
-        studioLink.textContent = `${studios[randomPost]}`;
+        studioLink.textContent = `${studios[randomStudio]}`;
         studioSpan.appendChild(studioLink);
         studioName.appendChild(studioSpan);
 
@@ -115,11 +141,11 @@ function createPostFeed() {
         let locationUI = document.createElement('div'); //location container
         locationUI.className = 'location';
         let locationSpan = document.createElement('span');
-        locationSpan.textContent = 'From ' + `${countries[randomPost]}`;
+        locationSpan.textContent = 'From ' + `${countries[randomCountries]}`;
         let dateUI = document.createElement('div'); //date container
         dateUI.className = 'date';
         let dateUISpan = document.createElement('span');
-        dateUISpan.textContent = `${date[randomPost]}`;
+        dateUISpan.textContent = `${date[randomDate]}`;
         locationUI.appendChild(locationSpan);
         dateUI.appendChild(dateUISpan);
         containerLD.appendChild(locationUI);
@@ -133,14 +159,14 @@ function createPostFeed() {
         avatarName.className = 'avatar-name';
         let avatarContainer = document.createElement('div'); //avatar container
         avatarContainer.className = 'avatar';
-        avatarContainer.innerHTML = `<img src="./assets/image/${postAvatar[randomPost]}">`;
+        avatarContainer.innerHTML = `<img src="./assets/image/${postAvatar[randomAvatar]}">`;
         let nameContainer = document.createElement('div'); //name container
         nameContainer.className = 'name';
         let textNode = document.createTextNode('BY ');
         let textSpan = document.createElement('span');
         textSpan.className = 'photographer';
         let textLink = document.createElement('a');
-        textLink.textContent = `${name[randomPost]}`;
+        textLink.textContent = `${name[randomName]}`;
         textSpan.appendChild(textLink);
         nameContainer.appendChild(textNode);
         nameContainer.appendChild(textSpan);
