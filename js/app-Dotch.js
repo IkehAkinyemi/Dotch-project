@@ -131,7 +131,7 @@ function createPostFeed() {
         studioName.className = 'studio-name';
         let studioSpan = document.createElement('span');
         let studioLink = document.createElement('a');
-        studioLink.textContent = `${studios[randomStudio]}`;
+        studioLink.textContent = `${studios[randomStudio]} Studio`;
         studioSpan.appendChild(studioLink);
         studioName.appendChild(studioSpan);
 
